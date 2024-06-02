@@ -1,9 +1,9 @@
 import {
   Card,
   CardBody,
-  Container,
   Divider,
   Heading,
+  Show,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -23,6 +23,14 @@ export default function Main() {
 
             <Text fontFamily={"monospace"}>
               Click the button below to get a new batch of facts
+              {
+                <Show breakpoint="(min-width: 700px)">
+                  <Text fontFamily={"monospace"}>
+                    (Ronald might like the new facts or he might react in a
+                    different way...)
+                  </Text>
+                </Show>
+              }
             </Text>
 
             <FactGrid />

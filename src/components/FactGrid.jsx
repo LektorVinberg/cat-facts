@@ -1,11 +1,12 @@
 import { Button, VStack, SimpleGrid, Show } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
+import { useMood } from "../hooks/MoodContext";
 import FactCard from "./FactCard";
 import axios from "axios";
 
 export default function FactGrid() {
   const [facts, setFacts] = useState([]);
-
+  const { changeMood } = useMood();
   useEffect(() => {
     fetchFacts();
   }, []);
@@ -25,7 +26,13 @@ export default function FactGrid() {
   return (
     <>
       <VStack w={"60%"}>
-        <Button alignSelf={"start"} onClick={fetchFacts}>
+        <Button
+          alignSelf={"start"}
+          onClick={() => {
+            changeMood();
+            fetchFacts();
+          }}
+        >
           New facts
         </Button>
         <Show breakpoint="(min-width: 1000px)">

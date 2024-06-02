@@ -2,11 +2,14 @@ import logo from "./logo.svg";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
 import Home from "./pages/Home.page";
+import { MoodProvider } from "./hooks/MoodContext";
 
 function App() {
   return (
     <ChakraProvider>
-      <Home />
+      <MoodProvider>
+        <Home />
+      </MoodProvider>
     </ChakraProvider>
   );
 }
