@@ -1,4 +1,4 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Grid, GridItem, Show } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Nav from "../components/Nav";
@@ -22,15 +22,17 @@ export default function Home() {
         <GridItem pl="2" /* bg="orange.300" */ area={"header"}>
           <Header />
         </GridItem>
-        <GridItem pl="2" /* bg="pink.300" */ area={"nav"}>
-          <Nav />
-        </GridItem>
+        <Show breakpoint="(min-width: 700px)">
+          <GridItem pl="2" /* bg="pink.300" */ area={"nav"}>
+            <Nav />
+          </GridItem>
+        </Show>
         <GridItem pl="2" /* bg="green.300" */ area={"main"}>
           <Main />
         </GridItem>
-        <GridItem pl="2" bg="blue.300" area={"footer"}>
+        {/* <GridItem pl="2" bg="blue.300" area={"footer"}>
           Footer
-        </GridItem>
+        </GridItem> */}
       </Grid>
     </>
   );

@@ -1,3 +1,19 @@
+# Fat Cat's cat facts app
+This lovely litte we application will supply the user with 6 random facts about cats.
+
+## Prerequisites
+You need to have node.js and node package manager installed to run this application.
+
+## Running the app
+- Clone the repository from gitHub
+- Ensure modules are downloaded by running the command ```bash npm install```
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
