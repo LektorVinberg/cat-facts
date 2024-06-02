@@ -2,7 +2,7 @@ import { Card, CardBody, Text } from "@chakra-ui/react";
 
 export default function FactCard() {
   return (
-    <Card>
+    <Card bgColor={"gray.200"}>
       <CardBody>
         <Text fontFamily={"monospace"}>
           BLBLBLBLBALFBD LADLBALSDFBLASFBLAFBLASFBLASF LBASLFBLASDBLASFBLAS FBL

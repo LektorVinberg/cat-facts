@@ -19,7 +19,7 @@ export default function Main() {
               Welcome to the wonderful world of random facts about cats!
             </Heading>
 
-            <Divider size={"xl"} />
+            <Divider colorScheme="blackAlpha" />
 
             <Text fontFamily={"monospace"}>
               Click the button below to get a new batch of facts

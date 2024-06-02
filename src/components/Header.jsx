@@ -10,7 +10,7 @@ import {
 export default function Header() {
   return (
     <>
-      <Card border={"2px solid gray.800"}>
+      <Card bgColor={"gray.200"} border={"2px solid gray.800"}>
         <CardBody>
           <Center h={"100%"}>
             <Text fontSize={"4xl"} fontFamily={"monospace"}>

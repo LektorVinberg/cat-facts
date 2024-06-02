@@ -1,6 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Main from "../components/Main";
+import Nav from "../components/Nav";
 export default function Home() {
   return (
     <>
@@ -10,7 +11,8 @@ export default function Home() {
                   "nav footer"`}
         /* gridTemplateRows={"50px 1fr 30px"} */
         gridTemplateRows="auto"
-        gridTemplateColumns={"150px 1fr"}
+        //gridTemplateColumns={"150px 1fr"}
+        gridTemplateColumns={"auto"}
         h="fit-content"
         gap="2"
         color="blackAlpha.700"
@@ -20,10 +22,10 @@ export default function Home() {
         <GridItem pl="2" /* bg="orange.300" */ area={"header"}>
           <Header />
         </GridItem>
-        <GridItem pl="2" bg="pink.300" area={"nav"}>
-          Nav
+        <GridItem pl="2" /* bg="pink.300" */ area={"nav"}>
+          <Nav />
         </GridItem>
-        <GridItem pl="2" bg="green.300" area={"main"}>
+        <GridItem pl="2" /* bg="green.300" */ area={"main"}>
           <Main />
         </GridItem>
         <GridItem pl="2" bg="blue.300" area={"footer"}>
