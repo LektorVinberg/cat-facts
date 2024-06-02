@@ -1,13 +1,19 @@
 # Fat Cat's cat facts app
-This lovely litte we application will supply the user with 6 random facts about cats.
+This lovely litte application will supply the user with 6 random facts about cats.
 
 ## Prerequisites
 You need to have node.js and node package manager installed to run this application.
 
 ## Running the app
 - Clone the repository from gitHub
-- Ensure modules are downloaded by running the command ```bash npm install```
+- Ensure modules are downloaded by running the command ```bash npm install``` in your terminal
+- Run the command ```npm start``` to start running the app (it will run in development mode)
+- If your browser does not automatically open the web application, you can navigate to [http://localhost:3000](http://localhost:3000)
 
+## Frameworks and libraries
+This application was created using React and Node Package Manager. For HTTP requests [Axios](https://www.npmjs.com/package/axios) was used.
+The component library (Chakra UI)[https://v2.chakra-ui.com/] was used for styled components. The wonderful and well behaved SVG cat Ronald Läskeblasksson III comes from the library (React Kawaii)[https://react-kawaii.vercel.app/].
+<!-- 
 
 
 
@@ -84,3 +90,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -->
