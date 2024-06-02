@@ -12,7 +12,7 @@ You need to have node.js and node package manager installed to run this applicat
 
 ## Frameworks and libraries
 This application was created using React and Node Package Manager. For HTTP requests [Axios](https://www.npmjs.com/package/axios) was used.
-The component library (Chakra UI)[https://v2.chakra-ui.com/] was used for styled components. The wonderful and well behaved SVG cat Ronald Läskeblasksson III comes from the library (React Kawaii)[https://react-kawaii.vercel.app/].
+The component library [Chakra UI](https://v2.chakra-ui.com/) was used for styled components. The wonderful and well behaved SVG cat Ronald Läskeblasksson III comes from the library [React Kawaii](https://react-kawaii.vercel.app/).
 <!-- 
 
 

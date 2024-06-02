@@ -1,12 +1,4 @@
-import {
-  Box,
-  Card,
-  CardBody,
-  Center,
-  Container,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Card, CardBody, Center, Text } from "@chakra-ui/react";
 export default function Header() {
   return (
     <>

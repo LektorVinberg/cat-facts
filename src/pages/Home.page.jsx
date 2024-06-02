@@ -2,16 +2,17 @@ import { Grid, GridItem, Show } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Nav from "../components/Nav";
+
+/**
+ * Component that sets up the layout of the page and renders the respective component in each area
+ */
 export default function Home() {
   return (
     <>
       <Grid
         templateAreas={`"header header"
-                  "nav main"
-                  "nav footer"`}
-        /* gridTemplateRows={"50px 1fr 30px"} */
+                  "nav main"`}
         gridTemplateRows="auto"
-        //gridTemplateColumns={"150px 1fr"}
         gridTemplateColumns={"auto"}
         h="fit-content"
         gap="2"
@@ -19,20 +20,17 @@ export default function Home() {
         fontWeight="bold"
         margin={"1%"}
       >
-        <GridItem pl="2" /* bg="orange.300" */ area={"header"}>
+        <GridItem pl="2" area={"header"}>
           <Header />
         </GridItem>
         <Show breakpoint="(min-width: 700px)">
-          <GridItem pl="2" /* bg="pink.300" */ area={"nav"}>
+          <GridItem pl="2" area={"nav"}>
             <Nav />
           </GridItem>
         </Show>
-        <GridItem pl="2" /* bg="green.300" */ area={"main"}>
+        <GridItem pl="2" area={"main"}>
           <Main />
         </GridItem>
-        {/* <GridItem pl="2" bg="blue.300" area={"footer"}>
-          Footer
-        </GridItem> */}
       </Grid>
     </>
   );

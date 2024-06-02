@@ -4,9 +4,15 @@ import { useMood } from "../hooks/MoodContext";
 import FactCard from "./FactCard";
 import axios from "axios";
 
+/**
+ * Component that renders the grid of fact cards in the main portion of the page.
+ */
+
 export default function FactGrid() {
   const [facts, setFacts] = useState([]);
   const { changeMood } = useMood();
+
+  //Runs at render to fetch the first set of cat facts
   useEffect(() => {
     fetchFacts();
   }, []);
@@ -23,9 +29,10 @@ export default function FactGrid() {
       console.error("Something went wrong when fetching cat facts");
     }
   };
+
   return (
     <>
-      <VStack w={"60%"}>
+      <VStack w={"90%"}>
         <Button
           alignSelf={"start"}
           onClick={() => {
@@ -35,6 +42,7 @@ export default function FactGrid() {
         >
           New facts
         </Button>
+        {/* The Show tag ensure rendering changes according to screen size */}
         <Show breakpoint="(min-width: 1000px)">
           <SimpleGrid columns={3} spacing={5}>
             {facts.map((fact, index) => (
