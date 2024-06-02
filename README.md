@@ -6,7 +6,7 @@ You need to have node.js and node package manager installed to run this applicat
 
 ## Running the app
 - Clone the repository from gitHub
-- Ensure modules are downloaded by running the command ```bash npm install``` in your terminal
+- Ensure modules are downloaded by running the command ```npm install``` in your terminal
 - Run the command ```npm start``` to start running the app (it will run in development mode)
 - If your browser does not automatically open the web application, you can navigate to [http://localhost:3000](http://localhost:3000)
 
